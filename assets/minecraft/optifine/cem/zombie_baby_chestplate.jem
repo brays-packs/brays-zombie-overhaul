@@ -1,0 +1,95 @@
+{
+	"credit": "Bray was here :)",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -6, 0],
+			"boxes": [
+				{
+					"coordinates": [-3, 4, -2, 6, 5, 4],
+					"uvNorth": [3, 20, 9, 25],
+					"uvEast": [0, 20, 3, 25],
+					"uvSouth": [12, 20, 18, 25],
+					"uvWest": [9, 20, 12, 25],
+					"uvUp": [9, 20, 3, 17],
+					"uvDown": [15, 17, 9, 20]
+				}
+			]
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"invertAxis": "xy",
+			"translate": [-3.5, -8.5, 0],
+			"boxes": [
+				{
+					"coordinates": [2, 4, -1.5, 3, 5, 3],
+					"uvNorth": [33, 28, 35, 33],
+					"uvEast": [30, 28, 33, 33],
+					"uvSouth": [38, 28, 40, 33],
+					"uvWest": [35, 28, 38, 33],
+					"uvUp": [35, 28, 33, 25],
+					"uvDown": [37, 25, 35, 28]
+				}
+			]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-1.5, -4, -0.5],
+			"submodels": [
+				{
+					"id": "left_foot_export_copy",
+					"invertAxis": "xy",
+					"translate": [1.5, 4, 0.5]
+				}
+			]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"translate": [1.5, -4, -0.5],
+			"submodels": [
+				{
+					"id": "right_foot_export_copy",
+					"invertAxis": "xy",
+					"translate": [-1.5, 4, 0.5]
+				}
+			]
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"invertAxis": "xy",
+			"translate": [3.5, -8.5, 0],
+			"boxes": [
+				{
+					"coordinates": [-5, 4, -1.5, 3, 5, 3],
+					"uvNorth": [33, 20, 35, 25],
+					"uvEast": [30, 20, 33, 25],
+					"uvSouth": [38, 20, 40, 25],
+					"uvWest": [35, 20, 38, 25],
+					"uvUp": [35, 20, 33, 17],
+					"uvDown": [37, 17, 35, 20]
+				}
+			]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -9, 0]
+		},
+		{
+			"part": "headwear",
+			"id": "headwear",
+			"invertAxis": "xy",
+			"translate": [0, -9, 0]
+		}
+	]
+}

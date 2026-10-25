@@ -1,0 +1,231 @@
+{
+	"credit": "Bray was here :)",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -8.75, 0],
+			"submodels": [
+				{
+					"id": "head_default",
+					"invertAxis": "xy",
+					"translate": [0, 0, -1],
+					"texture": "textures/entity/zombie/zombie_baby_detailed.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-4, 9, -3, 8, 8, 8], "textureOffset": [0, 0]},
+						{"coordinates": [-4, 8.9, -3, 8, 8, 8], "textureOffset": [32, 0], "sizeAdd": 0.35}
+					]
+				},
+				{
+					"id": "head_chicken",
+					"invertAxis": "xy",
+					"translate": [0, 0, -1],
+					"texture": "textures/entity/zombie/chicken_costume_baby.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-4, 9, -3, 8, 8, 8], "textureOffset": [0, 0], "sizeAdd": 0.3},
+						{"coordinates": [-4, 8.9, -3, 8, 8, 8], "textureOffset": [32, 0], "sizeAdd": 0.55},
+						{
+							"coordinates": [-1, 8.25, -2.25, 2, 1, 1],
+							"uvNorth": [19, 7, 21, 8],
+							"uvEast": [19, 7, 20, 8],
+							"uvSouth": [19, 7, 21, 8],
+							"uvWest": [20, 7, 21, 8],
+							"uvUp": [19, 7, 21, 8],
+							"uvDown": [19, 7, 21, 8]
+						}
+					],
+					"submodels": [
+						{
+							"id": "comb",
+							"invertAxis": "xy",
+							"translate": [0, 32.5, 1],
+							"rotate": [0, 0, 22.5],
+							"boxes": [
+								{
+									"coordinates": [-5.83592, -14.5, -4, 0, 4, 10],
+									"uvEast": [54, 16, 64, 20]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"var.jockey": "if(var.first_frame > 0, var.jockey, is_riding, 1, 0)",
+					"varb.jockey": "var.jockey == 1",
+					"var.time": "var.time + 1 * frame_time",
+					"var.y": "if(var.time < 10, frac(pos_y), var.y)",
+					"varb.chicken": "varb.jockey"
+				},
+				{
+					"head_chicken.visible": "varb.chicken",
+					"body_chicken.visible": "varb.chicken",
+					"left_arm_chicken.visible": "varb.chicken",
+					"right_arm_chicken.visible": "varb.chicken",
+					"left_leg_chicken.visible": "varb.chicken",
+					"right_leg_chicken.visible": "varb.chicken"
+				},
+				{
+					"var.first_frame": "if(death_time > 0, 0, 1)"
+				}
+			]
+		},
+		{
+			"part": "hat",
+			"id": "hat",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -6.5, 0],
+			"submodels": [
+				{
+					"id": "body_default",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"texture": "textures/entity/zombie/zombie_baby_detailed.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-2, 4, -1, 4, 5, 2], "textureOffset": [16, 16]},
+						{"coordinates": [-2, 4, -1, 4, 5, 2], "textureOffset": [16, 32], "sizeAdd": 0.3}
+					]
+				},
+				{
+					"id": "body_chicken",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"texture": "textures/entity/zombie/chicken_costume_baby.png",
+					"textureSize": [64, 64],
+					"boxes": [
+						{"coordinates": [-2, 4, -1, 4, 5, 2], "textureOffset": [16, 16], "sizeAdd": 0.1},
+						{"coordinates": [-2, 4, -1, 4, 5, 2], "textureOffset": [16, 32], "sizeAdd": 0.3}
+					]
+				}
+			]
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"invertAxis": "xy",
+			"translate": [3, -8.5, 0],
+			"texture": "textures/entity/zombie/zombie_baby_detailed.png",
+			"textureSize": [64, 64],
+			"submodels": [
+				{
+					"id": "left_arm_default",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{"coordinates": [-4, 4, -1, 2, 5, 2], "textureOffset": [28, 16]},
+						{"coordinates": [-4, 4, -1, 2, 5, 2], "textureOffset": [28, 32], "sizeAdd": 0.3}
+					]
+				},
+				{
+					"id": "left_arm_chicken",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"texture": "textures/entity/zombie/chicken_costume_baby.png",
+					"boxes": [
+						{"coordinates": [-4, 4, -1, 2, 5, 2], "textureOffset": [28, 16], "sizeAdd": 0.1},
+						{"coordinates": [-4, 4, -1, 2, 5, 2], "textureOffset": [28, 32], "sizeAdd": 0.3}
+					]
+				}
+			]
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"invertAxis": "xy",
+			"translate": [-3, -8.5, 0],
+			"texture": "textures/entity/zombie/zombie_baby_detailed.png",
+			"textureSize": [64, 64],
+			"submodels": [
+				{
+					"id": "right_arm_default",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{"coordinates": [2, 4, -1, 2, 5, 2], "textureOffset": [36, 16]},
+						{"coordinates": [2, 4, -1, 2, 5, 2], "textureOffset": [36, 32], "sizeAdd": 0.3}
+					]
+				},
+				{
+					"id": "right_arm_chicken",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"texture": "textures/entity/zombie/chicken_costume_baby.png",
+					"boxes": [
+						{"coordinates": [2, 4, -1, 2, 5, 2], "textureOffset": [36, 16], "sizeAdd": 0.1},
+						{"coordinates": [2, 4, -1, 2, 5, 2], "textureOffset": [36, 32], "sizeAdd": 0.3}
+					]
+				}
+			]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"translate": [1, -4, 0],
+			"texture": "textures/entity/zombie/zombie_baby_detailed.png",
+			"textureSize": [64, 64],
+			"submodels": [
+				{
+					"id": "left_leg_default",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{"coordinates": [-2, 0, -1, 2, 4, 2], "textureOffset": [0, 16]},
+						{"coordinates": [-2, 0, -1, 2, 4, 2], "textureOffset": [0, 32], "sizeAdd": 0.3}
+					]
+				},
+				{
+					"id": "left_leg_chicken",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"texture": "textures/entity/zombie/chicken_costume_baby.png",
+					"boxes": [
+						{"coordinates": [-2, 0, -1, 2, 4, 2], "textureOffset": [0, 16], "sizeAdd": 0.1},
+						{"coordinates": [-2, 0, -1, 2, 4, 2], "textureOffset": [0, 32], "sizeAdd": 0.3}
+					]
+				}
+			]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-1, -4, 0],
+			"texture": "textures/entity/zombie/zombie_baby_detailed.png",
+			"textureSize": [64, 64],
+			"submodels": [
+				{
+					"id": "right_leg_default",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{"coordinates": [0, 0, -1, 2, 4, 2], "textureOffset": [8, 16]},
+						{"coordinates": [0, 0, -1, 2, 4, 2], "textureOffset": [8, 32], "sizeAdd": 0.3}
+					]
+				},
+				{
+					"id": "right_leg_chicken",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"texture": "textures/entity/zombie/chicken_costume_baby.png",
+					"boxes": [
+						{"coordinates": [0, 0, -1, 2, 4, 2], "textureOffset": [8, 16], "sizeAdd": 0.1},
+						{"coordinates": [0, 0, -1, 2, 4, 2], "textureOffset": [8, 32], "sizeAdd": 0.3}
+					]
+				}
+			]
+		}
+	]
+}
