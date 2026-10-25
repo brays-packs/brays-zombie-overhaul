@@ -1,5 +1,5 @@
 {
-	"credit": "Created by FreshLX for Fresh Animations",
+	"credit": "Model by Bray | Animations by FreshLX for Fresh Animations",
 	"textureSize": [128, 64],
 	"texture": "textures/entity/zombie/zombie_special.png",
 	"models": [
@@ -8,7 +8,6 @@
 			"id": "root",
 			"invertAxis": "xy",
 			"translate": [0, 0, 0],
-			"attach": true,
 			"model": "zombie_animations.jpm"
 		},
 		{
@@ -26,6 +25,12 @@
 					"id": "Custom_Model_Created_by_Bray_for_BraysZombieOverhaul",
 					"invertAxis": "xy",
 					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"varb.21_2_plus": "true",
+					"varb.baby_model": "false"
 				}
 			]
 		},

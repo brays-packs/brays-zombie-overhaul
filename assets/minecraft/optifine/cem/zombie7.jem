@@ -1,5 +1,5 @@
 {
-	"credit": "Created by FreshLX for Fresh Animations",
+	"credit": "Model by Bray | Animations by FreshLX for Fresh Animations",
 	"textureSize": [128, 64],
 	"texture": "textures/entity/zombie/zombie_swamp.png",
 	"models": [
@@ -8,7 +8,6 @@
 			"id": "root",
 			"invertAxis": "xy",
 			"translate": [0, 0, 0],
-			"attach": true,
 			"model": "zombie_animations.jpm"
 		},
 		{
@@ -26,6 +25,12 @@
 					"id": "Custom_Model_Created_by_Bray_for_BraysZombieOverhaul",
 					"invertAxis": "xy",
 					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"varb.21_2_plus": "true",
+					"varb.baby_model": "false"
 				}
 			]
 		},
@@ -138,50 +143,6 @@
 									"uvWest": [0, 0, 0, 0],
 									"uvUp": [0, 0, 0, 0],
 									"uvDown": [0, 0, 0, 0]
-								}
-							]
-						},
-						{
-							"id": "red_mushroom1",
-							"invertAxis": "xy",
-							"translate": [2.82173, 9.65669, 0.68157],
-							"rotate": [7.46991, -0.74543, -12.66696],
-							"boxes": [
-								{
-									"coordinates": [-1.5, 0.98438, -1.5, 3, 0.75, 3],
-									"uvNorth": [71, 30, 72, 33],
-									"uvEast": [74, 30, 71, 31],
-									"uvSouth": [73, 30, 74, 33],
-									"uvWest": [71, 32, 74, 33],
-									"uvUp": [71, 30, 74, 33],
-									"uvDown": [0, 0, 0, 0]
-								},
-								{
-									"coordinates": [-0.75, -2.20312, -0.75, 1.5, 1.5, 1.5],
-									"uvNorth": [73, 36, 75, 38],
-									"uvEast": [71, 36, 73, 38],
-									"uvSouth": [69, 36, 71, 38],
-									"uvWest": [75, 36, 77, 38],
-									"uvUp": [0, 0, 0, 0],
-									"uvDown": [72, 39, 74, 41]
-								},
-								{
-									"coordinates": [-1.125, -0.70312, -1.125, 2.25, 0.75, 2.25],
-									"uvNorth": [75, 38, 78, 39],
-									"uvEast": [72, 38, 75, 39],
-									"uvSouth": [69, 38, 72, 39],
-									"uvWest": [78, 38, 81, 39],
-									"uvUp": [0, 0, 0, 0],
-									"uvDown": [69, 39, 72, 42]
-								},
-								{
-									"coordinates": [-2.25, -0.14062, -2.25, 4.5, 1.125, 4.5],
-									"uvNorth": [78, 32, 85, 34],
-									"uvEast": [78, 30, 85, 32],
-									"uvSouth": [78, 28, 85, 30],
-									"uvWest": [78, 34, 85, 36],
-									"uvUp": [69, 28, 76, 35],
-									"uvDown": [76, 28, 69, 35]
 								}
 							]
 						}
