@@ -1,8 +1,7 @@
 {
   "pack": {
-    "description": "Variety: The spice of... Nevermind.\n§fby Bray §9v1.5",
-    "pack_format": 97.1,
-    "min_format": 65,
+    "description": "Variety: The spice of... Nevermind.\n§fby Bray §9v1.5 (With FA)",
+    "min_format": 84,
     "max_format": 999
   }
 }
