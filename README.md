@@ -1,9 +1,3 @@
-# Bray's Zombie Overhaul
-A resource pack with ETF/EMF functionality that brings some variety to the undead
-
-------
-
-
 # Bray's Zombie Overhaul!
 **Bray's Zombie Overhaul** is a pack that brings new variety to the textures and models of zombies! This includes random models and textures as well as biome and y-level specific variants.
 ![Zombie Display](https://cdn.modrinth.com/data/cached_images/fdeb9efb39fc7577eea3f8fa0d4bde566e6f623d.png)
