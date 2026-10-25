@@ -1,0 +1,13 @@
+{
+	"credit": "Chicken Jockey!",
+	"animations": [
+		{
+			"head_chicken.visible": "is_child && is_riding",
+			"body_chicken.visible": "is_child && is_riding",
+			"left_arm_chicken.visible": "is_child && is_riding",
+			"right_arm_chicken.visible": "is_child && is_riding",
+			"left_leg_chicken.visible": "is_child && is_riding",
+			"right_leg_chicken.visible": "is_child && is_riding"
+		}
+	]
+}
